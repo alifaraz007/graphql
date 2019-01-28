@@ -118,7 +118,7 @@ mongoose
   .connect(
     `mongodb+srv://${
       process.env.MONGO_USER
-    }:9ld8DsrqzQBKjsYZ@alibaba-yx9i2.mongodb.net/graphql?retryWrites=true`,
+    }:${process.env.MONGO_PASSWORD}@alibaba-yx9i2.mongodb.net/graphql?retryWrites=true`,
     { useNewUrlParser: true }
   )
   .then(() => {
