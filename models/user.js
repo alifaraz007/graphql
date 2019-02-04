@@ -11,7 +11,7 @@ const userSchema = new Schema({
     required: true
   },
   //user will create many events so array
-  createEvents: [
+  createdEvents: [
     {
       type: Schema.Types.ObjectId,
       ref: "Event"
